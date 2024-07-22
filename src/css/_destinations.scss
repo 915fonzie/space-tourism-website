@@ -1,0 +1,57 @@
+.destinations-bg {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination-container {
+    margin: 1.5em;
+    text-align: center;
+    img {
+        width: 40%;
+        margin: 3em 0;
+    }
+    nav {
+        @include flex(space-around, inherit, row);
+        a {
+            @include heading-8(14px);
+            padding-bottom: 1em;
+            text-indent: -2px;
+            direction: rtl;
+        }
+    }
+    h2 {
+        @include heading-2(56px);
+        margin: 0.3em 0;
+    }
+    h5 {
+        @include heading-5(16px);
+        span {
+            font-weight: bold;
+            opacity: 25%;
+        }
+    }
+    p {
+        @include paragraph-1(15px);
+    }
+
+    hr {
+        margin: 1em 0;
+        border: 0.5px solid #979797;
+        opacity: 25%;
+    }
+}
+
+.distance-travel {
+    @include flex(inherit, inherit, column);
+    gap: 1em;
+
+    p {
+        @include heading-7(14px);
+    }
+
+    h6 {
+        @include heading-6(28px);
+        margin-top: 0.4em;
+    }
+}

@@ -1,0 +1,75 @@
+@mixin heading-1($font-size) {
+    margin: 0;
+    font-family: "Bellefair", serif;
+    font-size: $font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+
+@mixin heading-2($font-size) {
+    margin: 0;
+    font-family: "Bellefair", serif;
+    font-size: $font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin heading-3($font-size) {
+    margin: 0;
+    font-family: "Bellefair", serif;
+    font-size: $font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin heading-4($font-size) {
+    margin: 0;
+    font-family: "Bellefair", serif;
+    font-size: $font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin heading-5($font-size) {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: $font-size;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin heading-6($font-size) {
+    margin: 0;
+    font-family: "Bellefair", sans-serif;
+    font-size: $font-size;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin heading-7($font-size) {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: $font-size;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin heading-8($font-size) {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: $font-size;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $blue-300;
+}
+@mixin paragraph-1($font-size) {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    font-size: $font-size;
+    line-height: 180%;
+    color: $blue-300;
+}

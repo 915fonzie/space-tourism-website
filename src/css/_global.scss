@@ -9,3 +9,15 @@ body {
     margin: 0;
     padding: 0;
 }
+html {
+    background-color: $blue-900;
+}
+
+body {
+    color: $blue-300;
+}
+
+a {
+    text-decoration: none;
+    margin: 1em;
+}

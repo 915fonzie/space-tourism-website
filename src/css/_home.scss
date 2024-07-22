@@ -1,0 +1,40 @@
+.home-bg {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container {
+    @include flex(center, center, column);
+    padding: 1.5em;
+    a {
+        @include flex(center, center, row);
+        @include heading-4(20px);
+        margin: 5em 0;
+        width: 144px;
+        height: 144px;
+        color: $blue-900;
+        background-color: $white;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.10);
+        }
+    }
+}
+
+.home-text {
+    text-align: center;
+    h1 {
+        @include heading-1(80px);
+        margin: 0.3em 0;
+    }
+
+    h5 {
+        @include heading-5(16px);
+    }
+
+    p {
+        @include paragraph-1(15px);
+    }
+}
