@@ -58,7 +58,7 @@ a {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
-.home-container a:hover {
+.home-container a:hover, .home-container a:focus {
   box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1);
 }
 
@@ -248,7 +248,7 @@ a {
 .main-nav-links a:first-child {
   margin-top: 8em;
 }
-.main-nav-links a:hover {
+.main-nav-links a:hover, .main-nav-links a:focus {
   border-right: 2px solid;
   border-color: hsla(231, 77%, 90%, 0.5);
 }

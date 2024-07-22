@@ -7,7 +7,7 @@ export default function useImage(imgUrl, location) {
     React.useEffect(() => {
         async function fetchImage() {
             try {
-                const response = await import(`../assets/${location}/${imgUrl}.png`)
+                const response = await import(`../assets/${location}/${imgUrl}.${location === "technology" ? "jpg" : "png"}`)
                 setImg(response.default)
             }
             catch (error) {

@@ -58,7 +58,8 @@ $blue-900: #0B0D17;
         &:first-child {
             margin-top: 8em;
         }
-        &:hover {
+        &:hover,
+        &:focus {
             border-right: 2px solid;
             border-color: hsla(231, 77%, 90%, 0.5);
         }
