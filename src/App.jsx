@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound'
 import Destination from './pages/Destinations'
 import Crew from './pages/Crew'
 import Technology from './pages/Technology'
+import * as images from './components/Images'
 import Data from '../data.json'
 
 function App() {
@@ -20,17 +21,17 @@ function App() {
           <Route index element={<Homepage />} />
 
           <Route path='destinations' element={<DestinationsLayout />}> 
-            <Route path='moon' element={<Destination data={Data.destinations[0]} />} />
-            <Route path='mars' element={<Destination data={Data.destinations[1]}/>} />
-            <Route path='europa' element={<Destination data={Data.destinations[2]}/>} />
-            <Route path='titan' element={<Destination data={Data.destinations[3]}/>} />
+            <Route path='moon' element={<Destination data={Data.destinations[0]} img={images.moon} />} />
+            <Route path='mars' element={<Destination data={Data.destinations[1]} img={ images.mars} />} />
+            <Route path='europa' element={<Destination data={Data.destinations[2]} img={images.europa} />} />
+            <Route path='titan' element={<Destination data={Data.destinations[3]} img={images.titan} />} />
           </Route>
 
           <Route path='crew' element={<CrewLayout />}>
-            <Route path="douglas-hurley" element={<Crew data={Data.crew[0]} />} />
-            <Route path="mark-shuttleworth" element={<Crew data={Data.crew[1]} />}/>
-            <Route path="victor-glover" element={<Crew data={Data.crew[2]}/>} />
-            <Route path="anousheh-ansari" element={<Crew data={Data.crew[3]}/>} />
+            <Route path="douglas-hurley" element={<Crew data={Data.crew[0]} />} img={images.douglas} />
+            <Route path="mark-shuttleworth" element={<Crew data={Data.crew[1]} img={images.mark} />} />
+            <Route path="victor-glover" element={<Crew data={Data.crew[2]} />} img={images.victor} />
+            <Route path="anousheh-ansari" element={<Crew data={Data.crew[3]} img={images.anousheh} />} />
           </Route>
           
           <Route path='technology' element={<TechnologyLayout />}>

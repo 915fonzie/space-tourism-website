@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
-import useImage from '../hooks/useImage'
 
-export default function Destinations({data}) {
+export default function Destinations({data, img}) {
 
     const activeStyles = {
         borderBottom: "2px solid white",
     }
+
 
     return (
         <AnimatePresence>
@@ -19,7 +19,7 @@ export default function Destinations({data}) {
                 exit={{ opacity: 0 }}
             >
                 <h5><span>01</span> pick your destination</h5>
-                <img src={useImage(data.images.png, "destination")} />
+                <img src={img} />
                 <div>
                     <nav>
                         <NavLink
