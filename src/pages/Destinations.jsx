@@ -19,7 +19,7 @@ export default function Destinations({data}) {
                 exit={{ opacity: 0 }}
             >
                 <h5><span>01</span> pick your destination</h5>
-                <img src={useImage(data.images.png)} />
+                <img src={useImage(data.images.png, "destination")} />
                 <div>
                     <nav>
                         <NavLink
