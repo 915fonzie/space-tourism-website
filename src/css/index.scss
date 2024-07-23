@@ -103,6 +103,7 @@ $blue-900: #0B0D17;
     }
     .line-2 {
         opacity: 0;
+        max-height: 0;
     }
     .line-3 {
         transform: rotateZ(-45deg) translateY(-425%);

@@ -452,6 +452,7 @@ a {
 }
 .toggle .line-2 {
   opacity: 0;
+  max-height: 0;
 }
 .toggle .line-3 {
   transform: rotateZ(-45deg) translateY(-425%);
