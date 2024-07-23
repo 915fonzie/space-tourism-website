@@ -7,8 +7,9 @@ export default function Technology({data, img}) {
     useImage(img)
     
     return (
-        <AnimatePresence>
+        <AnimatePresence mode='wait' initial={false}>
             <motion.div
+                key={data.name}
                 className='technology-text'
                 initial={{ x: -300, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
