@@ -2,11 +2,13 @@
     background-image: url("../assets/crew/background-crew-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 135vh;
 }
 
 .crew-container {
     @include flex(inherit, center, column);
     padding: 1.5em;
+    margin: auto;
     text-align: center;
 
     h3 {
@@ -32,6 +34,7 @@
     p {
         @include paragraph-1(15px);
         margin-top: 1.5em;
+        max-width: 500px;
     }
 
     nav {
@@ -46,9 +49,14 @@
             background-color: #979797;
             border-radius: 50%;
             opacity: 27%;
+
+            &:hover,
+            &:focus {
+                opacity: 60%;
+            }
         }
     }
-    
+
     img {
         margin-top: 3em;
         width: 100%;

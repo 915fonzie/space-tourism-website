@@ -1,16 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from "framer-motion"
+import { Link, useLocation } from 'react-router-dom'
+import { motion } from "framer-motion"
 
 export default function Homepage() {
 
+    const {pathname} = useLocation()
+
     return (
-        <AnimatePresence>
             <motion.div
                 className='home-container'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{duration: 1}}
+                transition={{ duration: 0.5 }}
                 exit={{ opacity: 0 }}
             >
                 <div className='home-text'>
@@ -26,6 +27,5 @@ export default function Homepage() {
                 </div>
                 <Link to="destinations/moon">Explore</Link>
             </motion.div>
-        </AnimatePresence>
     )
 }

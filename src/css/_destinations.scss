@@ -2,20 +2,25 @@
     background-image: url("../assets/destination/background-destination-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .destination-container {
-    margin: 1.5em;
+    padding: 1.5em;
+    margin: auto;
     text-align: center;
+    max-width: 600px;
     img {
         width: 40%;
         margin: 3em 0;
     }
     nav {
-        @include flex(space-around, inherit, row);
+        @include flex(center, center, row);
+        gap: 2em;
         a {
             @include heading-8(14px);
             padding-bottom: 1em;
+            border-bottom: 2px solid transparent;
             text-indent: -2px;
             direction: rtl;
         }

@@ -1,42 +1,23 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
+import useImage from '../hooks/useImage'
 
-export default function Technology() {
+export default function Technology({data, img}) {
 
-    const activeStyles = {
-        textDecoration: "underline",
-    }
+    useImage(img)
     
     return (
         <AnimatePresence>
             <motion.div
-                className='technology-container'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-            >
-                <nav>
-                    <NavLink
-                        to="../launch-vehicle"
-                        style={({ isActive }) => isActive ? activeStyles : null}
-                        end
-                        >
-                        1
-                    </NavLink>
-                    <NavLink
-                        to="../spaceport"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                        2
-                    </NavLink>
-                    <NavLink
-                        to="../space-capsule"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                        3
-                    </NavLink>
-                </nav>
+                className='technology-text'
+                initial={{ x: -300, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.4 }}
+                exit={{ x: 300, opacity: 0 }}
+                >
+                <h4>the terminology...</h4>
+                <h3>{data.name}</h3>
+                <p>{data.description}</p>
             </motion.div>
         </AnimatePresence>
     )
