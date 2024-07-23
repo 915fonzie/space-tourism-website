@@ -28,9 +28,9 @@ function App() {
           </Route>
 
           <Route path='crew' element={<CrewLayout />}>
-            <Route path="douglas-hurley" element={<Crew data={Data.crew[0]} />} img={images.douglas} />
+            <Route path="douglas-hurley" element={<Crew data={Data.crew[0]} img={images.douglas}/>} />
             <Route path="mark-shuttleworth" element={<Crew data={Data.crew[1]} img={images.mark} />} />
-            <Route path="victor-glover" element={<Crew data={Data.crew[2]} />} img={images.victor} />
+            <Route path="victor-glover" element={<Crew data={Data.crew[2]} img={images.victor}/>} />
             <Route path="anousheh-ansari" element={<Crew data={Data.crew[3]} img={images.anousheh} />} />
           </Route>
           
