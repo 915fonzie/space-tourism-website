@@ -448,14 +448,13 @@ a {
 }
 
 .toggle .line-1 {
-  transform: rotateZ(45deg) translateY(425%);
+  transform: rotateZ(45deg) translate(25%, 225%);
 }
 .toggle .line-2 {
   opacity: 0;
-  max-height: 0;
 }
 .toggle .line-3 {
-  transform: rotateZ(-45deg) translateY(-425%);
+  transform: rotateZ(-45deg) translate(25%, -225%);
 }
 
 @media screen and (min-width: 768px) {

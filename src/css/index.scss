@@ -98,15 +98,14 @@ $blue-900: #0B0D17;
 
 .toggle {
     .line-1 {
-        transform: rotateZ(45deg) translateY(425%);
+        transform: rotateZ(45deg) translate(25%, 225%);
 
     }
     .line-2 {
         opacity: 0;
-        max-height: 0;
     }
     .line-3 {
-        transform: rotateZ(-45deg) translateY(-425%);
+        transform: rotateZ(-45deg) translate(25%, -225%);
     }
 }
 
