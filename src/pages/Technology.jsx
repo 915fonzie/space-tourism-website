@@ -11,10 +11,10 @@ export default function Technology({data, img}) {
             <motion.div
                 key={data.name}
                 className='technology-text'
-                initial={{ x: -300, opacity: 0 }}
+                initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.4 }}
-                exit={{ x: 300, opacity: 0 }}
+                exit={{ x: 100, opacity: 0 }}
                 >
                 <h4>the terminology...</h4>
                 <h3>{data.name}</h3>

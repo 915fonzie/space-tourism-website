@@ -12,10 +12,10 @@ export default function Destinations({data, img}) {
             <motion.div
                 className='destination-text'
                 key={data.name}
-                initial={{ x: -300, opacity: 0 }}
+                initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                exit={{ x: 300, opacity: 0 }}
+                exit={{ x: 100, opacity: 0 }}
                 >
                 <h2>{data.name}</h2>
                 <p>{data.description}</p>

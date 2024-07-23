@@ -12,10 +12,10 @@ export default function Crew({data, img}) {
             <motion.div
                 className='crew-text'
                 key={data.name}
-                initial={{ x: -300, opacity: 0 }}
+                initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.4 }}
-                exit={{ x: 300, opacity: 0 }}
+                exit={{ x: 100, opacity: 0 }}
                 >
                 <h4>{data.role}</h4>
                 <h3>{data.name}</h3>
