@@ -104,7 +104,8 @@ a {
   max-width: 600px;
 }
 .destination-container img {
-  width: 40%;
+  width: 150px;
+  height: 150px;
   margin: 3em 0;
 }
 .destination-container nav {
