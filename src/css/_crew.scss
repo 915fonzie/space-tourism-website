@@ -39,7 +39,6 @@
 
     nav {
         @include flex(center, center, row);
-        margin-top: 5em;
         gap: 1em;
         a {
             margin: 0;
@@ -58,10 +57,17 @@
     }
 
     img {
-        margin-top: 3em;
-        width: 100%;
+        max-width: 100%;
         mask-image: linear-gradient(to bottom, #000000 77%, transparent 100%);
     }
+}
 
+.crew-text {
+    height: 319px;
+}
 
+.crew-img-wrapper {
+    margin-top: 3em;
+    padding: 1em;
+    height: 350px;
 }

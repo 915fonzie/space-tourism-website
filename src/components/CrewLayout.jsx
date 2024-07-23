@@ -50,16 +50,18 @@ export default function CrewLayout() {
                         >
                     </NavLink>
             </nav>
-            <AnimatePresence mode='wait' initial={false}>
-                <motion.img
-                    key={pathname}
-                    src={img}
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.4 }}
-                    exit={{ x: 100, opacity: 0 }}
-                    />
-            </AnimatePresence>
+            <div className='crew-img-wrapper'>
+                <AnimatePresence mode='wait' initial={false}>
+                    <motion.img
+                        key={pathname}
+                        src={img}
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.4 }}
+                        exit={{ x: 100, opacity: 0 }}
+                        />
+                </AnimatePresence>
+            </div>
             </motion.div>
     )
 }
