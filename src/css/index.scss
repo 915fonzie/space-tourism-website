@@ -29,6 +29,7 @@ $blue-900: #0B0D17;
 
 main {
     @include  flex(inherit, inherit, column);
+    overflow: hidden;
     width: 100%;
     height: 100%;
 }
@@ -419,6 +420,7 @@ main {
     }
 
     .crew-no-img {
+        
         justify-content: space-between;
         align-items: flex-start;
         text-align: left;
@@ -427,6 +429,7 @@ main {
     }
 
     .crew-img-wrapper {
+        
         position: static;
         margin: 0;
         margin-top: auto;
