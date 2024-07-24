@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MainNavBar from './MainNavbar'
 import { Outlet, useLocation } from 'react-router'
 
-export default function Layout() {
+export default function Layout({windowSize}) {
     const [background, setBackground] = useState('home-bg')
     const { pathname } = useLocation()
     
@@ -23,7 +23,7 @@ export default function Layout() {
 
     return (
         <div className={`site-wrapper ${background}`}>
-            <MainNavBar />
+            <MainNavBar windowSize={windowSize}/>
             <main>
                 <Outlet />
             </main>

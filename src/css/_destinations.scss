@@ -2,14 +2,17 @@
     background-image: url("../assets/destination/background-destination-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .destination-container {
+    @include flex(center, center, column);
     padding: 1.5em;
-    margin: auto;
+    width: 100%;
     text-align: center;
-    max-width: 600px;
+    .destination-title-img {
+        @include flex(space-between, center, column);
+        width: 100%;
+    }
     img {
         width: 150px;
         height: 150px;
@@ -19,7 +22,7 @@
         @include flex(center, center, row);
         gap: 2em;
         a {
-            @include heading-8(14px);
+            @include heading-8(0.875rem);
             padding-bottom: 1em;
             border-bottom: 2px solid transparent;
             text-indent: -2px;
@@ -27,18 +30,19 @@
         }
     }
     h2 {
-        @include heading-2(56px);
+        @include heading-2(3.11rem);
         margin: 0.3em 0;
     }
     h5 {
-        @include heading-5(16px);
+        @include heading-5(1rem);
         span {
             font-weight: bold;
             opacity: 25%;
         }
     }
     p {
-        @include paragraph-1(15px);
+        @include paragraph-1(0.9375rem);
+        max-width: 500px;
     }
 
     hr {
@@ -50,14 +54,15 @@
 
 .distance-travel {
     @include flex(inherit, inherit, column);
+    
     gap: 1em;
 
     p {
-        @include heading-7(14px);
+        @include heading-7(0.875rem);
     }
 
     h6 {
-        @include heading-6(28px);
+        @include heading-6(1.75rem);
         margin-top: 0.4em;
     }
 }

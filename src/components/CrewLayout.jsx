@@ -25,43 +25,46 @@ export default function CrewLayout() {
                 transition={{duration: 0.5}}
                 exit={{ opacity: 0 }}
             >
-                <h5><span>02</span> meet your crew</h5>
-                <Outlet context={{img, setImg}}/>
-                <nav>
-                    <NavLink
-                        to="douglas-hurley"
-                        style={({ isActive }) => isActive ? activeStyles : null}
-                        end
-                        >
-                    </NavLink>
-                    <NavLink
-                        to="mark-shuttleworth"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                    </NavLink>
-                    <NavLink
-                        to="victor-glover"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                    </NavLink>
-                    <NavLink
-                        to="anousheh-ansari"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                    </NavLink>
-            </nav>
-            <div className='crew-img-wrapper'>
+                <div className='crew-no-img'>
+                    <h5><span>02</span> meet your crew</h5>
+                    <Outlet context={{img, setImg}}/>
+                    <nav>
+                        <NavLink
+                            to="douglas-hurley"
+                            style={({ isActive }) => isActive ? activeStyles : null}
+                            end
+                            >
+                        </NavLink>
+                        <NavLink
+                            to="mark-shuttleworth"
+                            style={({isActive}) => isActive ? activeStyles : null}
+                            >
+                        </NavLink>
+                        <NavLink
+                            to="victor-glover"
+                            style={({isActive}) => isActive ? activeStyles : null}
+                            >
+                        </NavLink>
+                        <NavLink
+                            to="anousheh-ansari"
+                            style={({isActive}) => isActive ? activeStyles : null}
+                            >
+                        </NavLink>
+                    </nav>
+                </div>
                 <AnimatePresence mode='wait' initial={false}>
-                    <motion.img
+                    <motion.div
+                        className='crew-img-wrapper'
                         key={pathname}
                         src={img}
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.4 }}
                         exit={{ x: 100, opacity: 0 }}
-                        />
+                    >
+                        <img src={img} />
+                    </motion.div>
                 </AnimatePresence>
-            </div>
             </motion.div>
     )
 }

@@ -48,7 +48,7 @@ function App() {
   return (
         <AnimatePresence mode='wait'>
           <Routes location={location} key={path}>
-          <Route path='/' element={<Layout />}>
+        <Route path='/' element={<Layout windowSize={windowSize} />}>
             <Route index element={<Homepage />} />        
             <Route path='destinations' element={<DestinationsLayout />}> 
               <Route path='moon' element={<Destination data={Data.destinations[0]} img={images.moon} />} />
@@ -66,8 +66,8 @@ function App() {
             
             <Route path='technology' element={<TechnologyLayout />}>
               <Route path="launch-vehicle" element={<Technology data={Data.technology[0]} img={windowSize < 768 ? images.vehicleMobile : images.vehicleDesktop} />}/>
-              <Route path="spaceport" element={<Technology data={Data.technology[1]} img={windowSize < 768 ? images.capsuleMobile : images.capsuleDesktop}/>}/>
-              <Route path="space-capsule" element={<Technology data={Data.technology[2]} img={windowSize < 768 ? images.spaceportMobile : images.spaceportDesktop}/>}/>
+              <Route path="spaceport" element={<Technology data={Data.technology[1]} img={windowSize < 768 ? images.spaceportMobile : images.spaceportDesktop}/>}/>
+              <Route path="space-capsule" element={<Technology data={Data.technology[2]} img={windowSize < 768 ? images.capsuleMobile : images.capsuleDesktop}/>}/>
             </Route>
             
             <Route path="*" element={<NotFound />} />

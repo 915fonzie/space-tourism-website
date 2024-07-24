@@ -9,7 +9,7 @@
     padding: 1.5em;
     a {
         @include flex(center, center, row);
-        @include heading-4(20px);
+        @include heading-4(1.25rem);
         margin: 5em 0;
         width: 144px;
         height: 144px;
@@ -27,15 +27,15 @@
 .home-text {
     text-align: center;
     h1 {
-        @include heading-1(80px);
+        @include heading-1(5rem);
         margin: 0.3em 0;
     }
 
     h5 {
-        @include heading-5(16px);
+        @include heading-5(1rem);
     }
 
     p {
-        @include paragraph-1(15px);
+        @include paragraph-1(0.9375rem);
     }
 }

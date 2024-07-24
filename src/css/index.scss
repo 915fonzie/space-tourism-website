@@ -21,14 +21,16 @@ $blue-900: #0B0D17;
 @import './technology';
 
 .site-wrapper {
-    min-height: 100vh;
+    @include flex(inherit, inherit, column);
+    height: 100vh;
     width: 100vw;
+    overflow: scroll;
+}
 
-    main {
-        @include  flex(inherit, inherit, column);
-        width: 100%;
-        height: 100%;
-    }
+main {
+    @include  flex(inherit, inherit, column);
+    width: 100%;
+    height: 100%;
 }
 
 .main-header {
@@ -43,6 +45,7 @@ $blue-900: #0B0D17;
 }
 
 .main-nav-links {
+    @include flex(flex-start, flex-start, column);
     position: fixed;
     top: 0;
     right: 0;
@@ -50,17 +53,19 @@ $blue-900: #0B0D17;
     max-width: 350px;
     height: 100%;
     left: 100%;
-    @include flex(flex-start, flex-start, column);
     background-color: hsla(230, 35%, 7%, 0.15);
     backdrop-filter: blur(35px);
     transition: transform 0.5s ease;
 
     a {
-        @include heading-8(16px);
+        @include heading-8(1rem);
         width: calc(100% - 2em);
         margin: 1em 0;
         margin-left: 2em;
         border-color: $blue-300;
+        span {
+            font-weight: bold;
+        }
         &:first-child {
             margin-top: 8em;
         }
@@ -77,7 +82,11 @@ $blue-900: #0B0D17;
 }
 
 .logo-icon {
-    width: 40px;
+    text-decoration: none;
+    img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .burger {
@@ -99,7 +108,6 @@ $blue-900: #0B0D17;
 .toggle {
     .line-1 {
         transform: rotateZ(45deg) translate(25%, 225%);
-
     }
     .line-2 {
         opacity: 0;
@@ -114,5 +122,316 @@ $blue-900: #0B0D17;
 @media screen and (min-width: 768px){
     .home-bg{
         background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+    .destinations-bg {
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+    .crew-bg {
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+    .technology-bg {
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+
+    .main-navbar {
+        padding: 0;
+    }
+
+    .logo-icon {
+        padding: 0 44px;
+    }
+
+    .main-nav-links {
+        @include flex(center, center, row);
+        flex-grow: 1;
+        gap: 3em;
+        height: 96px;
+        max-width: 100%;
+        position: initial;
+        background-color: rgba(255, 255, 255, 0.05);
+        a {
+            @include flex(center, center, row);
+            gap: 0.5em;
+            margin: 0;
+            width: fit-content;
+            height: 100%;
+            color: $white;
+            &:first-child {
+                margin: 0;
+            }
+            &:hover,
+            &:focus {
+                border-right: none;
+                border-bottom: 2px solid;
+                border-color: hsla(231, 77%, 90%, 0.5);
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .home-container {
+        margin: auto;
+        width: 70%;
+        a {
+            margin-top: 2em;
+            margin-bottom: 3.5em;
+            font-size: 2rem;
+            width: 272px;
+            height: 272px;
+        }
+    }
+
+    .home-text {
+        margin-top: 5em;
+        h1 {
+            margin: 0.2em 0;
+            font-size: 9rem;
+        }
+        h5 {
+            font-size: 1.75rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .destination-container {
+        @include flex(center, center, column);
+        padding: 2.5em;
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 5em 0;
+        }
+        nav {
+            a {
+                font-size: 1rem;
+            }
+        }
+        h2 {
+            font-size: 5rem;
+        }
+        h5 {
+            text-align: start;
+            align-self: flex-start;
+            font-size: 1.25rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .distance-travel {
+        justify-content: center;
+        flex-direction: row;
+        gap: 8em;
+    }
+
+    .crew-container {
+        padding: 2.5em;
+        padding-bottom: 0;
+        h3 {
+            font-size: 2.5rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
+        h5 {
+            align-self: flex-start;
+            font-size: 1.25rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .crew-text {
+        height: 300px;
+    }
+
+    .crew-img-wrapper {
+        position: fixed;
+        bottom: -4%;
+        padding: 0;
+    }
+
+    .technology-container {
+        h5 {
+            align-self: flex-start;
+            margin-left: 2em;
+            margin-top: 2em;
+            font-size: 1.25rem;
+        }
+        img {
+            height: 356px;
+        }
+
+        nav {
+            a {
+                width: 56px;
+                height: 56px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .technology-text {
+        h3 {
+            font-size: 2.5rem;
+            margin: 0.5em 0;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+            max-width: 520px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .home-bg{
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
+    .destinations-bg {
+        background-image: url("../assets/destination/background-destination-desktop.jpg");
+    }
+    .crew-bg {
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+    }
+    .technology-bg {
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+    }
+
+    .main-navbar {
+        padding-top: 2.5em;
+    }
+
+    .navbar-breakline-wrapper {
+        position: relative;
+        height: 4px;
+        width: 50%;
+        hr {
+            margin: 0;
+            position: absolute;
+            border: 0.5px solid #979797;
+            opacity: 25%;
+            width: 105%;
+            top: 50%;
+            right: -5%;
+            z-index: 1;
+        }
+    }
+
+    .main-nav-links {
+        min-width: 736px;
+    }
+
+    .home-container {
+        @include flex(space-between, flex-end, row);
+        padding: 8em;
+        width: 100%;
+        height: 100%;
+        a {
+            margin: 0;
+        }
+    }
+
+    .home-text {
+        margin: 0;
+        text-align: left;
+        width: 500px;
+    }
+
+    .destination-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        height: 100%;
+        .destination-title-img {
+            justify-content: center;
+        }
+        h2 {
+            font-size: 6rem;
+        }
+        h5 {
+            font-size: 1.75rem;
+            margin-left: 4em;
+        }
+        img {
+            width: 480px;
+            height: 480px;
+            margin: auto;
+        }
+        nav {
+            justify-content: start;
+        }
+        p, 
+        hr {
+            max-width: 400px;
+        }
+        hr {
+            margin: 2em 0;
+        }
+    }
+
+    .destination-links-text {
+        margin: auto;
+        text-align: left;
+        width: 100%;
+    }
+
+    .distance-travel {
+        justify-content: flex-start;
+    }
+
+    .crew-container {
+        @include flex(center,center ,row);
+        padding: 1em 10.5em 5em;
+        height: 100%;
+        width: 100%;
+        h3 {
+            font-size: 3.5rem;
+        }
+        h4 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        h5 {
+            padding-top: 2em;
+            font-size: 1.75rem;
+        }
+        p {
+            max-width: 550px;
+            font-size: 1.125rem;
+        }
+        nav {
+            gap: 3em;
+            a {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    .crew-no-img {
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        height: 100%;
+        width: 100%;
+    }
+
+    .crew-img-wrapper {
+        position: static;
+        margin: 0;
+        margin-top: auto;
+        width: 90%;
+        height: 85%;
+        max-height: 750px;
     }
 }

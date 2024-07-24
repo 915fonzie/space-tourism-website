@@ -2,14 +2,18 @@ import React, { useRef } from 'react'
 import { Link, Navigate, NavLink } from "react-router-dom"
 import logo from '../assets/shared/logo.svg'
 
-export default function MainNavBar() {
+export default function MainNavBar({windowSize}) {
 
     const navLinksRef = useRef(null)
     const burgerRef = useRef(null)
 
-    const activeStyles = {
-        borderRight: "2px solid",
-    }
+    const activeStyles = windowSize >= 768 ?
+        {
+            borderBottom: "2px solid",
+        } :
+        {
+            borderRight: "2px solid"
+        }
 
     function handleToggleNav() {
         burgerRef.current.classList.toggle("toggle")
@@ -25,6 +29,7 @@ export default function MainNavBar() {
         <header className='main-header'>
             <nav className='main-navbar'>
                 <Link to="/"><img className='logo-icon' src={logo} alt='logo icon' /></Link>
+                {windowSize >= 1440 && <div className='navbar-breakline-wrapper'><hr></hr></div>}
                 <div className='main-nav-links' ref={navLinksRef}>
                     <NavLink
                         to="."

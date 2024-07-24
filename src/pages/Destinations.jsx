@@ -18,8 +18,10 @@ export default function Destinations({data, img}) {
                 exit={{ x: 100, opacity: 0 }}
                 >
                 <h2>{data.name}</h2>
-                <p>{data.description}</p>
-                <hr></hr>
+                <div>
+                    <p>{data.description}</p>
+                    <hr></hr>
+                </div>
                 <div className='distance-travel'>
                     <div>
                         <p>avg. distance</p>
