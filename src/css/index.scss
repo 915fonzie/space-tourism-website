@@ -29,7 +29,6 @@ $blue-900: #0B0D17;
 
 main {
     @include  flex(inherit, inherit, column);
-    overflow: hidden;
     width: 100%;
     height: 100%;
 }
@@ -132,6 +131,10 @@ main {
     }
     .technology-bg {
         background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+
+    main {
+        overflow: hidden;
     }
 
     .main-navbar {
@@ -436,5 +439,59 @@ main {
         width: 90%;
         height: 85%;
         max-height: 750px;
+    }
+
+    .technology-container {
+        overflow: scroll;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0 4em;
+        h3 {
+            margin: 0.3em 0;
+            font-size: 3.5rem;
+        }
+        h4 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        h5 {
+            margin: 0;
+            margin-left: 5.6em;
+            font-size: 1.75rem;
+        }
+    }
+
+    .technology-img-text {
+        @include flex(center, center, row-reverse);
+        align-self: center;
+        width: 100%;
+        img {
+            height: 600px;
+            width: 600px;
+        }
+    }
+
+    .technology-links-text {
+        @include flex(flex-end, center, row);
+        gap: 2em;
+        width: 100%;
+        nav {
+            @include flex(center, center, column);
+            gap: 1.5em;
+            margin: 0;
+            a {
+                font-size: 2rem;
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    .technology-text {
+        text-align: left;
+        p {
+            font-size: 1.125rem;
+            max-width: 490px;
+        }
     }
 }

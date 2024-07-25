@@ -319,10 +319,11 @@ a {
 
 .technology-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 100%;
 }
 .technology-container h5 {
   margin: 0;
@@ -332,7 +333,6 @@ a {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #D0D6F9;
-  margin-top: 1em;
   margin-bottom: 5em;
 }
 .technology-container h5 span {
@@ -366,8 +366,14 @@ a {
   border-radius: 50%;
 }
 
+.technology-img-text {
+  align-self: flex-end;
+  padding-bottom: 1em;
+}
+
 .technology-text {
   padding: 1.5em;
+  text-align: center;
 }
 .technology-text h4 {
   margin: 0;
@@ -386,7 +392,7 @@ a {
   font-weight: normal;
   text-transform: uppercase;
   color: #D0D6F9;
-  margin: 1em 0;
+  margin: 0.7em 0;
 }
 .technology-text p {
   margin: 0;
@@ -394,6 +400,7 @@ a {
   font-size: 15px;
   line-height: 180%;
   color: #D0D6F9;
+  margin: auto;
 }
 
 .site-wrapper {
@@ -411,7 +418,6 @@ main {
   justify-content: inherit;
   align-items: inherit;
   flex-direction: column;
-  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -521,6 +527,9 @@ main {
   }
   .technology-bg {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+  main {
+    overflow: hidden;
   }
   .main-navbar {
     padding: 0;
@@ -804,5 +813,64 @@ main {
     width: 90%;
     height: 85%;
     max-height: 750px;
+  }
+  .technology-container {
+    overflow: scroll;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0 4em;
+  }
+  .technology-container h3 {
+    margin: 0.3em 0;
+    font-size: 3.5rem;
+  }
+  .technology-container h4 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .technology-container h5 {
+    margin: 0;
+    margin-left: 5.6em;
+    font-size: 1.75rem;
+  }
+  .technology-img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    align-self: center;
+    width: 100%;
+  }
+  .technology-img-text img {
+    height: 600px;
+    width: 600px;
+  }
+  .technology-links-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+  }
+  .technology-links-text nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0;
+  }
+  .technology-links-text nav a {
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+  }
+  .technology-text {
+    text-align: left;
+  }
+  .technology-text p {
+    font-size: 1.125rem;
+    max-width: 490px;
   }
 }/*# sourceMappingURL=index.css.map */

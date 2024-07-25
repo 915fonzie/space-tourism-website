@@ -25,38 +25,42 @@ export default function Technology() {
                 exit={{ opacity: 0 }}
             >
                 <h5><span>01</span> pick your destination</h5>
-                <AnimatePresence mode='wait' initial={false}>
-                    <motion.img
-                        key={pathname}
-                        src={img}
-                        initial={{ x: "-100%", opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.4 }}
-                        exit={{ x: "100%", opacity: 0 }}
-                        />
-                </AnimatePresence>
-                <nav>
-                    <NavLink
-                        to="launch-vehicle"
-                        style={({ isActive }) => isActive ? activeStyles : null}
-                        end
-                        >
-                        1
-                    </NavLink>
-                    <NavLink
-                        to="spaceport"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                        2
-                    </NavLink>
-                    <NavLink
-                        to="space-capsule"
-                        style={({isActive}) => isActive ? activeStyles : null}
-                        >
-                        3
-                    </NavLink>
-                </nav>
-                <Outlet context={{ img, setImg }} />
+                <div className='technology-img-text'>      
+                    <AnimatePresence mode='wait' initial={false}>
+                        <motion.img
+                            key={pathname}
+                            src={img}
+                            initial={{ x: "-100%", opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.4 }}
+                            exit={{ x: "100%", opacity: 0 }}
+                            />
+                    </AnimatePresence>
+                    <div className='technology-links-text'>     
+                        <nav>
+                            <NavLink
+                                to="launch-vehicle"
+                                style={({ isActive }) => isActive ? activeStyles : null}
+                                end
+                                >
+                                1
+                            </NavLink>
+                            <NavLink
+                                to="spaceport"
+                                style={({isActive}) => isActive ? activeStyles : null}
+                                >
+                                2
+                            </NavLink>
+                            <NavLink
+                                to="space-capsule"
+                                style={({isActive}) => isActive ? activeStyles : null}
+                                >
+                                3
+                            </NavLink>
+                        </nav>
+                        <Outlet context={{ img, setImg }} />
+                    </div>
+                </div>
             </motion.div>
     )
 }
