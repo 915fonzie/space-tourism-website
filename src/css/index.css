@@ -488,9 +488,6 @@ main {
   .technology-bg {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
   }
-  main {
-    overflow: hidden;
-  }
   h2 {
     font-size: 2rem;
   }
