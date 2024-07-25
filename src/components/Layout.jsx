@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import MainNavBar from './MainNavbar'
 import { Outlet, useLocation } from 'react-router'
 

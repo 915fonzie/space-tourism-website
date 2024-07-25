@@ -8,8 +8,8 @@
     @include flex(space-between, center, column);
     text-align: center;
     height: 100%;
+    
     h5 {
-        @include heading-5(16px);
         margin-bottom: 5em;
         span {
             font-weight: bold;
@@ -48,18 +48,15 @@
     padding: 1.5em;
     text-align: center;
     h4 {
-        @include heading-4(18px);
         margin-top: 0.5em;
         opacity: 50%;
     }
 
     h3 {
-        @include heading-3(24px);
         margin: 0.7em 0;
     }
 
     p {
-        @include paragraph-1(15px);
         margin: auto;
     }
 

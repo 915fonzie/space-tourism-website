@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { Link, Navigate, NavLink } from "react-router-dom"
+import { useRef } from 'react'
+import { Link, NavLink } from "react-router-dom"
 import logo from '../assets/shared/logo.svg'
 
 export default function MainNavBar({windowSize}) {

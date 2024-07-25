@@ -26,16 +26,4 @@
 
 .home-text {
     text-align: center;
-    h1 {
-        @include heading-1(5rem);
-        margin: 0.3em 0;
-    }
-
-    h5 {
-        @include heading-5(1rem);
-    }
-
-    p {
-        @include paragraph-1(0.9375rem);
-    }
 }

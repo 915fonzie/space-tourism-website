@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useLocation, Outlet, Navigate } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
@@ -30,10 +30,10 @@ export default function Technology() {
                         <motion.img
                             key={pathname}
                             src={img}
-                            initial={{ x: "-100%", opacity: 0 }}
+                            initial={{ x: -100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.4 }}
-                            exit={{ x: "100%", opacity: 0 }}
+                            exit={{ x: 100, opacity: 0 }}
                             />
                     </AnimatePresence>
                     <div className='technology-links-text'>     

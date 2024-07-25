@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
+import { useState, useEffect } from 'react'
+import { Routes, Route, useLocation } from "react-router-dom"
 import Layout from './components/Layout'
 import DestinationsLayout from './components/DestinationsLayout' 
 import CrewLayout from './components/CrewLayout'
@@ -15,7 +15,7 @@ import Data from '../data.json'
 
 function App() {
 
-  const [windowSize, setWindowSize] = React.useState(null)
+  const [windowSize, setWindowSize] = useState(null)
   const location = useLocation()
   let path = 'home'
 
@@ -32,7 +32,7 @@ function App() {
     path = 'not-found'
   }
 
-  React.useEffect(() => {  
+  useEffect(() => {  
     const handleResize = () => {
       setWindowSize(window.innerWidth)
     }

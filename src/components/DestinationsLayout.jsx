@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Outlet, useLocation, Navigate } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
@@ -17,7 +17,6 @@ export default function DestinationsLayout() {
     }
 
     return (
-
             <motion.div
                 className='destination-container'
                 initial={{ opacity: 0 }}
@@ -35,7 +34,7 @@ export default function DestinationsLayout() {
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.3 }}
                             exit={{ x: 100, opacity: 0 }}
-                            />
+                        />
                     </AnimatePresence>
                 </div>
                 <div className='destination-links-text'>    
@@ -43,25 +42,25 @@ export default function DestinationsLayout() {
                         <NavLink
                             to="moon"
                             style={({ isActive }) => isActive ? activeStyles : null}
-                            >
+                        >
                             Moon
                         </NavLink>
                         <NavLink
                             to="mars"
                             style={({isActive}) => isActive ? activeStyles : null}
-                            >
+                        >
                             Mars
                         </NavLink>
                         <NavLink
                             to="europa"
                             style={({isActive}) => isActive ? activeStyles : null}
-                            >
+                        >
                             Europa
                         </NavLink>
                         <NavLink
                             to="titan"
                             style={({isActive}) => isActive ? activeStyles : null}
-                            >
+                        >
                             Titan
                         </NavLink>
                     </nav>

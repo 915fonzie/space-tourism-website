@@ -30,18 +30,15 @@
         }
     }
     h2 {
-        @include heading-2(3.11rem);
         margin: 0.3em 0;
     }
     h5 {
-        @include heading-5(1rem);
         span {
             font-weight: bold;
             opacity: 25%;
         }
     }
     p {
-        @include paragraph-1(0.9375rem);
         max-width: 500px;
     }
 

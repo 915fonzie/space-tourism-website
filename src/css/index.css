@@ -65,31 +65,6 @@ a {
 .home-text {
   text-align: center;
 }
-.home-text h1 {
-  margin: 0;
-  font-family: "Bellefair", serif;
-  font-size: 5rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #D0D6F9;
-  margin: 0.3em 0;
-}
-.home-text h5 {
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #D0D6F9;
-}
-.home-text p {
-  margin: 0;
-  font-family: "Barlow", sans-serif;
-  font-size: 0.9375rem;
-  line-height: 180%;
-  color: #D0D6F9;
-}
 
 .destinations-bg {
   background-image: url("../assets/destination/background-destination-mobile.jpg");
@@ -139,33 +114,13 @@ a {
   direction: rtl;
 }
 .destination-container h2 {
-  margin: 0;
-  font-family: "Bellefair", serif;
-  font-size: 3.11rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #D0D6F9;
   margin: 0.3em 0;
-}
-.destination-container h5 {
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #D0D6F9;
 }
 .destination-container h5 span {
   font-weight: bold;
   opacity: 25%;
 }
 .destination-container p {
-  margin: 0;
-  font-family: "Barlow", sans-serif;
-  font-size: 0.9375rem;
-  line-height: 180%;
-  color: #D0D6F9;
   max-width: 500px;
 }
 .destination-container hr {
@@ -219,32 +174,11 @@ a {
   text-align: center;
 }
 .crew-container h3 {
-  margin: 0;
-  font-family: "Bellefair", serif;
-  font-size: 24px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #D0D6F9;
   margin-top: 0.3em;
 }
 .crew-container h4 {
-  margin: 0;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #D0D6F9;
   margin-top: 3em;
   opacity: 50%;
-}
-.crew-container h5 {
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #D0D6F9;
 }
 .crew-container h5 span {
   font-weight: bold;
@@ -252,11 +186,6 @@ a {
   margin-right: 1em;
 }
 .crew-container p {
-  margin: 0;
-  font-family: "Barlow", sans-serif;
-  font-size: 15px;
-  line-height: 180%;
-  color: #D0D6F9;
   margin-top: 1.5em;
   max-width: 500px;
 }
@@ -326,13 +255,6 @@ a {
   height: 100%;
 }
 .technology-container h5 {
-  margin: 0;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #D0D6F9;
   margin-bottom: 5em;
 }
 .technology-container h5 span {
@@ -376,31 +298,69 @@ a {
   text-align: center;
 }
 .technology-text h4 {
-  margin: 0;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #D0D6F9;
   margin-top: 0.5em;
   opacity: 50%;
 }
 .technology-text h3 {
-  margin: 0;
-  font-family: "Bellefair", serif;
-  font-size: 24px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #D0D6F9;
   margin: 0.7em 0;
 }
 .technology-text p {
+  margin: auto;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-size: 5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  margin: 0.3em 0;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-size: 3.11rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+h3 {
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+h4 {
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-size: 1.125rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+h5 {
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+p {
   margin: 0;
   font-family: "Barlow", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 180%;
   color: #D0D6F9;
-  margin: auto;
 }
 
 .site-wrapper {
@@ -531,6 +491,21 @@ main {
   main {
     overflow: hidden;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
   .main-navbar {
     padding: 0;
   }
@@ -593,9 +568,6 @@ main {
   .home-text h5 {
     font-size: 1.75rem;
   }
-  .home-text p {
-    font-size: 1rem;
-  }
   .destination-container {
     display: flex;
     justify-content: center;
@@ -611,16 +583,9 @@ main {
   .destination-container nav a {
     font-size: 1rem;
   }
-  .destination-container h2 {
-    font-size: 5rem;
-  }
   .destination-container h5 {
     text-align: start;
     align-self: flex-start;
-    font-size: 1.25rem;
-  }
-  .destination-container p {
-    font-size: 1rem;
   }
   .distance-travel {
     justify-content: center;
@@ -631,18 +596,8 @@ main {
     padding: 2.5em;
     padding-bottom: 0;
   }
-  .crew-container h3 {
-    font-size: 2.5rem;
-  }
-  .crew-container h4 {
-    font-size: 1.5rem;
-  }
   .crew-container h5 {
     align-self: flex-start;
-    font-size: 1.25rem;
-  }
-  .crew-container p {
-    font-size: 1rem;
   }
   .crew-text {
     height: 300px;
@@ -656,7 +611,6 @@ main {
     align-self: flex-start;
     margin-left: 2em;
     margin-top: 2em;
-    font-size: 1.25rem;
   }
   .technology-container img {
     height: 356px;
@@ -667,14 +621,9 @@ main {
     font-size: 1.5rem;
   }
   .technology-text h3 {
-    font-size: 2.5rem;
     margin: 0.5em 0;
   }
-  .technology-text h4 {
-    font-size: 1.5rem;
-  }
   .technology-text p {
-    font-size: 1rem;
     max-width: 520px;
   }
 }
@@ -691,6 +640,33 @@ main {
   .technology-bg {
     background-image: url("../assets/technology/background-technology-desktop.jpg");
   }
+  h2 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  h4 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+  a {
+    font-size: 2rem;
+  }
+  hr,
+  a,
+  h4,
+  .technology-links-text nav,
+  .home-text,
+  .crew-img-wrapper {
+    margin: 0;
+  }
   .main-navbar {
     padding-top: 2.5em;
   }
@@ -700,7 +676,6 @@ main {
     width: 50%;
   }
   .navbar-breakline-wrapper hr {
-    margin: 0;
     position: absolute;
     border: 0.5px solid #979797;
     opacity: 25%;
@@ -712,37 +687,44 @@ main {
   .main-nav-links {
     min-width: 736px;
   }
+  .home-container,
+  .destination-container,
+  .crew-container,
+  .crew-no-img,
+  .technology-container {
+    height: 100%;
+    width: 100%;
+  }
   .home-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
     padding: 8em;
-    width: 100%;
-    height: 100%;
   }
   .home-container a {
-    margin: 0;
+    margin-top: auto;
+    margin-bottom: 1.8em;
+  }
+  .home-text,
+  .destination-links-text,
+  .crew-no-img,
+  .technology-text {
+    text-align: left;
   }
   .home-text {
-    margin: 0;
-    text-align: left;
     width: 500px;
   }
   .destination-container {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
     align-items: stretch;
-    height: 100%;
+    flex-direction: row;
   }
   .destination-container .destination-title-img {
     justify-content: center;
   }
-  .destination-container h2 {
-    font-size: 6rem;
-  }
   .destination-container h5 {
-    font-size: 1.75rem;
     margin-left: 4em;
   }
   .destination-container img {
@@ -751,22 +733,26 @@ main {
     margin: auto;
   }
   .destination-container nav {
-    justify-content: start;
+    justify-content: flex-start;
   }
   .destination-container p,
   .destination-container hr {
-    max-width: 400px;
+    max-width: 450px;
   }
   .destination-container hr {
     margin: 2em 0;
   }
+  .destination-links-text,
+  .technology-img-text,
+  .technology-links-text {
+    width: 100%;
+  }
   .destination-links-text {
     margin: auto;
-    text-align: left;
-    width: 100%;
   }
   .distance-travel {
     justify-content: flex-start;
+    gap: 3em;
   }
   .crew-container {
     display: flex;
@@ -774,23 +760,12 @@ main {
     align-items: center;
     flex-direction: row;
     padding: 1em 10.5em 5em;
-    height: 100%;
-    width: 100%;
-  }
-  .crew-container h3 {
-    font-size: 3.5rem;
-  }
-  .crew-container h4 {
-    margin: 0;
-    font-size: 2rem;
   }
   .crew-container h5 {
     padding-top: 2em;
-    font-size: 1.75rem;
   }
   .crew-container p {
     max-width: 550px;
-    font-size: 1.125rem;
   }
   .crew-container nav {
     gap: 3em;
@@ -800,37 +775,31 @@ main {
     height: 15px;
   }
   .crew-no-img {
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    text-align: left;
-    height: 100%;
-    width: 100%;
+    flex-direction: column;
   }
   .crew-img-wrapper {
     position: static;
-    margin: 0;
     margin-top: auto;
     width: 90%;
     height: 85%;
     max-height: 750px;
   }
   .technology-container {
-    overflow: scroll;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: scroll;
   }
   .technology-container h3 {
-    margin: 0.3em 0;
-    font-size: 3.5rem;
-  }
-  .technology-container h4 {
-    margin: 0;
-    font-size: 2rem;
+    margin: 0.5em 0;
   }
   .technology-container h5 {
     margin-left: 5.6em;
     margin-bottom: auto;
-    font-size: 1.75rem;
   }
   .technology-img-text {
     display: flex;
@@ -839,7 +808,6 @@ main {
     flex-direction: row-reverse;
     align-self: center;
     margin: auto;
-    width: 100%;
   }
   .technology-img-text img {
     height: 50vh;
@@ -851,7 +819,6 @@ main {
     align-items: center;
     flex-direction: row;
     gap: 2em;
-    width: 100%;
   }
   .technology-links-text nav {
     display: flex;
@@ -859,18 +826,12 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 1.5em;
-    margin: 0;
   }
   .technology-links-text nav a {
-    font-size: 2rem;
     width: 80px;
     height: 80px;
   }
-  .technology-text {
-    text-align: left;
-  }
   .technology-text p {
-    font-size: 1.125rem;
     max-width: 490px;
   }
 }/*# sourceMappingURL=index.css.map */

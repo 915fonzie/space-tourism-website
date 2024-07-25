@@ -1,7 +1,5 @@
-import React from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 import useImage from '../hooks/useImage'
-
 
 export default function Crew({data, img}) {
 

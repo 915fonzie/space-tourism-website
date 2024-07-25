@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useLocation, Outlet, Navigate } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
@@ -33,22 +33,22 @@ export default function CrewLayout() {
                             to="douglas-hurley"
                             style={({ isActive }) => isActive ? activeStyles : null}
                             end
-                            >
+                        >
                         </NavLink>
                         <NavLink
                             to="mark-shuttleworth"
                             style={({isActive}) => isActive ? activeStyles : null}
-                            >
+                        >
                         </NavLink>
                         <NavLink
                             to="victor-glover"
                             style={({isActive}) => isActive ? activeStyles : null}
-                            >
+                        >
                         </NavLink>
                         <NavLink
                             to="anousheh-ansari"
                             style={({isActive}) => isActive ? activeStyles : null}
-                            >
+                        >
                         </NavLink>
                     </nav>
                 </div>

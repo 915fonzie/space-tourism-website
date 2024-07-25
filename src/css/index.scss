@@ -20,6 +20,31 @@ $blue-900: #0B0D17;
 @import './crew';
 @import './technology';
 
+h1 {
+    @include heading-1(5rem);
+    margin: 0.3em 0;
+}
+
+h2 {
+    @include heading-2(3.11rem);
+}
+
+h3 {
+    @include heading-3(1.5rem);
+}
+
+h4 {
+    @include heading-4(1.125rem);
+}
+
+h5 {
+    @include heading-5(1rem);
+}
+
+p {
+    @include paragraph-1(0.9375rem);
+}
+
 .site-wrapper {
     @include flex(inherit, inherit, column);
     height: 100svh;
@@ -137,6 +162,26 @@ main {
         overflow: hidden;
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
     .main-navbar {
         padding: 0;
     }
@@ -197,9 +242,6 @@ main {
         h5 {
             font-size: 1.75rem;
         }
-        p {
-            font-size: 1rem;
-        }
     }
 
     .destination-container {
@@ -215,16 +257,9 @@ main {
                 font-size: 1rem;
             }
         }
-        h2 {
-            font-size: 5rem;
-        }
         h5 {
             text-align: start;
             align-self: flex-start;
-            font-size: 1.25rem;
-        }
-        p {
-            font-size: 1rem;
         }
     }
 
@@ -237,18 +272,8 @@ main {
     .crew-container {
         padding: 2.5em;
         padding-bottom: 0;
-        h3 {
-            font-size: 2.5rem;
-        }
-        h4 {
-            font-size: 1.5rem;
-        }
         h5 {
             align-self: flex-start;
-            font-size: 1.25rem;
-        }
-        p {
-            font-size: 1rem;
         }
     }
 
@@ -267,7 +292,6 @@ main {
             align-self: flex-start;
             margin-left: 2em;
             margin-top: 2em;
-            font-size: 1.25rem;
         }
         img {
             height: 356px;
@@ -284,20 +308,16 @@ main {
 
     .technology-text {
         h3 {
-            font-size: 2.5rem;
             margin: 0.5em 0;
         }
-        h4 {
-            font-size: 1.5rem;
-        }
         p {
-            font-size: 1rem;
             max-width: 520px;
         }
     }
 }
 
 @media screen and (min-width: 1440px){
+
     .home-bg{
         background-image: url("../assets/home/background-home-desktop.jpg");
     }
@@ -311,6 +331,40 @@ main {
         background-image: url("../assets/technology/background-technology-desktop.jpg");
     }
 
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    hr,
+    a,
+    h4,
+    .technology-links-text nav,
+    .home-text,
+    .crew-img-wrapper {
+        margin: 0;
+    }
+
     .main-navbar {
         padding-top: 2.5em;
     }
@@ -320,7 +374,6 @@ main {
         height: 4px;
         width: 50%;
         hr {
-            margin: 0;
             position: absolute;
             border: 0.5px solid #979797;
             opacity: 25%;
@@ -335,35 +388,43 @@ main {
         min-width: 736px;
     }
 
+    .home-container,
+    .destination-container,
+    .crew-container,
+    .crew-no-img,
+    .technology-container {
+        height: 100%;
+        width: 100%;
+    }
+
     .home-container {
         @include flex(space-between, flex-end, row);
         padding: 8em;
-        width: 100%;
-        height: 100%;
         a {
-            margin: 0;
+            margin-top: auto;
+            margin-bottom: 1.8em;
         }
     }
 
-    .home-text {
-        margin: 0;
+    .home-text,
+    .destination-links-text,
+    .crew-no-img,
+    .technology-text {
         text-align: left;
+    }
+
+    .home-text {
         width: 500px;
     }
 
     .destination-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-        height: 100%;
+        @include flex(center, stretch, row);
+
         .destination-title-img {
             justify-content: center;
         }
-        h2 {
-            font-size: 6rem;
-        }
+
         h5 {
-            font-size: 1.75rem;
             margin-left: 4em;
         }
         img {
@@ -372,47 +433,44 @@ main {
             margin: auto;
         }
         nav {
-            justify-content: start;
+            justify-content: flex-start;
         }
         p, 
         hr {
-            max-width: 400px;
+            max-width: 450px;
         }
         hr {
             margin: 2em 0;
         }
     }
 
+    .destination-links-text,
+    .technology-img-text,
+    .technology-links-text {
+        width: 100%;
+    }
+
     .destination-links-text {
         margin: auto;
-        text-align: left;
-        width: 100%;
     }
 
     .distance-travel {
         justify-content: flex-start;
+        gap: 3em;
     }
 
     .crew-container {
         @include flex(center,center ,row);
         padding: 1em 10.5em 5em;
-        height: 100%;
-        width: 100%;
-        h3 {
-            font-size: 3.5rem;
-        }
-        h4 {
-            margin: 0;
-            font-size: 2rem;
-        }
+
         h5 {
             padding-top: 2em;
-            font-size: 1.75rem;
         }
+
         p {
             max-width: 550px;
-            font-size: 1.125rem;
         }
+
         nav {
             gap: 3em;
             a {
@@ -423,18 +481,11 @@ main {
     }
 
     .crew-no-img {
-        
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: left;
-        height: 100%;
-        width: 100%;
+        @include flex(space-between, flex-start, column );
     }
 
     .crew-img-wrapper {
-        
         position: static;
-        margin: 0;
         margin-top: auto;
         width: 90%;
         height: 85%;
@@ -442,21 +493,15 @@ main {
     }
 
     .technology-container {
+        @include flex(center, center, column);
         overflow: scroll;
-        justify-content: center;
-        align-items: center;
         h3 {
-            margin: 0.3em 0;
-            font-size: 3.5rem;
+            margin: 0.5em 0;
         }
-        h4 {
-            margin: 0;
-            font-size: 2rem;
-        }
+
         h5 {
             margin-left: 5.6em;
             margin-bottom: auto;
-            font-size: 1.75rem;
         }
     }
 
@@ -464,7 +509,6 @@ main {
         @include flex(center, center, row-reverse);
         align-self: center;
         margin: auto;
-        width: 100%;
         img {
             height: 50vh;
             width: 50%;
@@ -474,13 +518,10 @@ main {
     .technology-links-text {
         @include flex(center, center, row);
         gap: 2em;
-        width: 100%;
         nav {
             @include flex(center, center, column);
             gap: 1.5em;
-            margin: 0;
             a {
-                font-size: 2rem;
                 width: 80px;
                 height: 80px;
             }
@@ -488,9 +529,7 @@ main {
     }
 
     .technology-text {
-        text-align: left;
         p {
-            font-size: 1.125rem;
             max-width: 490px;
         }
     }

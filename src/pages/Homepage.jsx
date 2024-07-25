@@ -1,11 +1,7 @@
-import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { motion } from "framer-motion"
 
 export default function Homepage() {
-
-    const {pathname} = useLocation()
-
     return (
             <motion.div
                 className='home-container'
