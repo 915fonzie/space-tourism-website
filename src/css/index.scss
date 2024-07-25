@@ -22,7 +22,7 @@ $blue-900: #0B0D17;
 
 .site-wrapper {
     @include flex(inherit, inherit, column);
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
 }
 
