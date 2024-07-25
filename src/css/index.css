@@ -683,6 +683,7 @@ main {
   }
   .main-nav-links {
     min-width: 736px;
+    padding-right: 5em;
   }
   .home-container,
   .destination-container,
@@ -697,11 +698,11 @@ main {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
-    padding: 8em;
+    padding: 8em 10em;
   }
   .home-container a {
     margin-top: auto;
-    margin-bottom: 1.8em;
+    margin-bottom: 0;
   }
   .home-text,
   .destination-links-text,
@@ -710,7 +711,7 @@ main {
     text-align: left;
   }
   .home-text {
-    width: 500px;
+    width: 450px;
   }
   .destination-container {
     display: flex;

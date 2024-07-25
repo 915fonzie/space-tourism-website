@@ -382,6 +382,7 @@ main {
 
     .main-nav-links {
         min-width: 736px;
+        padding-right: 5em;
     }
 
     .home-container,
@@ -395,10 +396,10 @@ main {
 
     .home-container {
         @include flex(space-between, flex-end, row);
-        padding: 8em;
+        padding: 8em 10em;
         a {
             margin-top: auto;
-            margin-bottom: 1.8em;
+            margin-bottom: 0;
         }
     }
 
@@ -410,7 +411,7 @@ main {
     }
 
     .home-text {
-        width: 500px;
+        width: 450px;
     }
 
     .destination-container {
