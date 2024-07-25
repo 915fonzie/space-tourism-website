@@ -816,9 +816,8 @@ main {
   }
   .technology-container {
     overflow: scroll;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2em 0 4em;
   }
   .technology-container h3 {
     margin: 0.3em 0;
@@ -829,8 +828,8 @@ main {
     font-size: 2rem;
   }
   .technology-container h5 {
-    margin: 0;
     margin-left: 5.6em;
+    margin-bottom: auto;
     font-size: 1.75rem;
   }
   .technology-img-text {
@@ -839,15 +838,16 @@ main {
     align-items: center;
     flex-direction: row-reverse;
     align-self: center;
+    margin: auto;
     width: 100%;
   }
   .technology-img-text img {
-    height: 600px;
-    width: 600px;
+    height: 50vh;
+    width: 50%;
   }
   .technology-links-text {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 2em;
